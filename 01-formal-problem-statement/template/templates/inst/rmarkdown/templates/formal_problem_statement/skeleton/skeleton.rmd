@@ -1,0 +1,110 @@
+---
+title: "[Project Title]"
+subtitle: "Formal Problem Statement"
+author: "[Author]"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    toc: TRUE
+---
+<style type="text/css">
+
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+  text-align: center;
+}
+h3.subtitle { 
+    font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.author, h3.subtitle { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { /* Header 4 - and the author and data headers use this too  */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+</style>
+
+```{r echo = FALSE}
+client <- '[client]'
+```
+
+#### Prepared for: `r client`
+
+### Background
+*Provide some background about the company, vision and problem that needs to be solved.*
+
+### Goals
+*Briefly mention the goals of this project.* 
+
+### Objectives
+*Specify ***measurable** *objectives for this project.*
+*What should be error criteria?*
+*Is there any performance SLA?*
+
+### Business Perspective
+*How does this project help business and customers?*
+*Does it make sense to build instead of buying?*
+
+### Deliverables
+The deliverables include all code, assets and documention necessary for `r client` to run this in production. The following table lists some of the main deliverables: 
+
+* **Model**: [Provide more details]
+* **Code**: [Provide more details]
+* **Reports**: [Provide more details]
+* **Documents**: [Provide more details]
+* **Data**: [Provide more details] 
+
+### Project Timeline
+The table below shows some of the key milestones in the project. 
+
+```{r echo=FALSE}
+library(knitr)
+library(kableExtra)
+
+timeline <- data.frame(
+  Date=c("[mm-dd-yyyy]", "[mm-dd-yyyy]"),
+  Milestone=c(
+    "Milestone 1",
+    "Milestone 2"
+  )
+)
+
+kable(timeline, "html") %>%
+  kable_styling("striped", full_width = F) %>%
+  column_spec(1, bold = T, border_right = T) %>%
+  column_spec(2, width = "30em")
+```
+
+### Risks
+*Specify any risks associated with this project?*  
+
+### Stakeholders
+The following table lists key stakeholders of this project and how frequently they will be informed about the project progress. 
+
+```{r echo=FALSE}
+library(knitr)
+library(kableExtra)
+
+timeline <- data.frame(
+  Role=c("Role 1", "Role 2"),
+  "Update Frequency"=c(
+    "[Daily | Weekly | Monthly]",
+    "[Daily | Weekly | Monthly]")
+)
+
+kable(timeline, "html") %>%
+  kable_styling("striped", full_width = F) %>%
+  column_spec(1, bold = T, border_right = T) %>%
+  column_spec(2, width = "30em")
+```
+
