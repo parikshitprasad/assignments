@@ -40,6 +40,10 @@ client <- 'Real Easy, Inc.'
 
 #### Prepared for: `r client`
 
+### Goals
+The goal of this project is to empower home sellers and buyers with the best home price estimation tool. This is inline with the company's vision of making real estate transactions as easy as possible for home sellers and buyers. 
+
+
 ### Background
 `r client` is a leading player in online real estate transactions business. Their vision is to make real estate transactions as easy as possible for home sellers and buyers. They have more than 100 million residential properties in their website covering all 50 states of the US. They have a user base of about 20 million users with more than 10 million unique visitors viewing properties in their website. In 2017, more than 45,000 home sellers and buyers used their services for real estate transactions. 
 
@@ -49,8 +53,7 @@ client <- 'Real Easy, Inc.'
 
 Predicting sales price is a tricky problem to solve. Lot of companies have attempted to solve this problem. [Redfin](https://www.redfin.com) has recently come up with a [home price esitimation](https://www.redfin.com/redfin-estimate) product which has a median error rate of < 1.82 % for on market properties. [Zillow](https://www.zillow.com) has a similar home price estimation product, [Zestimate](https://www.zillow.com/zestimate/#acc) which has a median error rate of 4.6%. 
 
-### Goals
-One of the long term goals of `r client` is to empower home sellers and buyers with the best home price estimation tool. This is inline with the company's vision of making real estate transactions as easy as possible for home sellers and buyers. 
+
 
 ### Objectives
 The main objectives of this project are listed below: 
